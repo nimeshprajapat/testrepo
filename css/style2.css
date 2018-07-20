@@ -1,0 +1,220 @@
+/*-----------------------------------------------------------------------------------*/
+/*	07. COLLAGE
+/*-----------------------------------------------------------------------------------*/
+.collage-wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+.collage {
+    width: 101%;
+    margin-top: -10px;
+    margin-left: -10px !important;
+    margin-right: 0;
+}
+.collage-image-wrapper {
+    opacity: 0;
+    overflow: hidden;
+}
+.collage-image-wrapper img {
+    padding: 10px;
+}
+.collage-image-wrapper figure a {
+    color: #FFF !important
+}
+.collage-image-wrapper .overlay a .over {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+}
+/*-----------------------------------------------------------------------------------*/
+/*	08. THUMBNAIL OVERLAY
+/*-----------------------------------------------------------------------------------*/
+
+figure {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+figure img {
+    display: inline;
+    width: 100%;
+}
+figure img.img-auto {
+    width: auto;
+}
+.overlay a .over {
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    max-width: 100%;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background: rgba(30, 30, 30, 0.6);
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.overlay a .over span {
+    background: #FFF;
+    height: 26px;
+    position: absolute;
+    width: 2px;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    margin-left: -1px;
+    margin-top: -13px;
+}
+.overlay a .over span:after {
+    background: #FFF;
+    content: "";
+    height: 2px;
+    left: -12px;
+    position: absolute;
+    top: 12px;
+    width: 26px;
+}
+.overlay.small a .over span {
+    height: 20px;
+    width: 2px;
+    margin-top: -10px;
+}
+.overlay.small a .over span:after {
+    height: 2px;
+    left: -9px;
+    top: 9px;
+    width: 20px;
+}
+.overlay a:hover .over {
+    opacity: 1
+}
+.overlay a:hover .text-overlay .info {
+    -webkit-transform: none;
+    transform: none;
+}
+.overlay.instagram a .over span {
+    width: auto;
+    height: auto;
+    font-size: 35px;
+    color: #FFF;
+    opacity: 0.7;
+    margin-left: -14px;
+    margin-top: -14px;
+    background: none;
+}
+.overlay.instagram a .over span:after {
+    content: "\f351";
+    font-family: "Ionicons";
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    background: none;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	24. LIGHTGALLERY
+/*-----------------------------------------------------------------------------------*/
+
+.lg-backdrop {background: rgba(30, 30, 30, 0.97)}
+.lg-icon {
+    transition: all 200ms ease-in
+}
+.lg-outer .lg-thumb-item {
+    border-radius: 0
+}
+.lg-outer .lg-thumb-item,
+.lg-outer .lg-thumb-item:hover {
+    border-color: transparent
+}
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item.active:hover {
+    border-color: #80c9c5
+}
+.lg-outer .lg-thumb {
+    text-align: center
+}
+.lg-outer .lg-thumb-item {
+    float: none;
+    display: inline-block;
+}
+.lg-sub-html {
+    z-index: 1060
+}
+.lg-sub-html p {
+    font-size: 14px;
+    color: #ddd;
+}
+.lg-sub-html h3 {
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.lg-outer.lg-pull-caption-up.lg-thumb-open .lg-sub-html {
+    bottom: 80px
+}
+.lg-outer .lg-toogle-thumb,
+.lg-outer .lg-thumb-outer {
+    background: #272727 !important
+}
+.lg-sub-html {
+    background: rgba(30, 30, 30, 0.6) !important;
+}
+.lg-outer .lg-toogle-thumb,
+#lg-counter,
+.lg-toolbar .lg-icon,
+.lg-actions .lg-next,
+.lg-actions .lg-prev {
+    color:rgba(255,255,255, 0.8)
+}
+.lg-actions .lg-next:hover,
+.lg-actions .lg-prev:hover {
+    color:rgba(255,255,255, 1) !important;
+}
+.lg-actions .lg-next,
+.lg-actions .lg-prev,
+.lg-toolbar {
+    background: none !important;
+}
+.lg-toolbar .lg-icon {
+    font-size: 30px;
+    padding: 15px 0;
+    margin-right: 5px;
+}
+.lg-actions .lg-next,
+.lg-actions .lg-prev {
+    font-size: 25px;
+}
+.lg-actions .lg-prev {
+	left: 10px;
+}
+.lg-actions .lg-next {
+	right: 10px;
+}
+.lg-actions .lg-next,
+.lg-actions .lg-prev,
+.lg-outer .lg-toogle-thumb {
+    border-radius: 0
+}
+.lg-outer .lg-toogle-thumb {
+    z-index: 1061
+}
+.lg-sub-html {
+    padding: 15px 40px
+}
+.lg-outer .lg-thumb {
+    padding: 7px 0
+}
+.lg-outer .lg-item {
+    background: none
+}
+.lg-outer .lg-item.lg-complete:after {
+    display: none
+}
+#lg-counter {
+    font-size: 14px;
+}
